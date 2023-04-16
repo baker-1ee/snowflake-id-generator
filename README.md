@@ -25,7 +25,8 @@ Snowflake ID의 장점과 단점은 다음과 같습니다.
 * 타임스탬프 오버플로우: 41비트의 타임스탬프를 사용하여 ID를 생성합니다. 이러한 이유로, 시스템 시작 이후 69년이 지나면 오버플로우가 발생할 수 있습니다. 이 문제를 해결하기 위해서는 서버ID 비트를 줄이고, 타임스탬프 비트를 늘리는 방식으로 보완 가능합니다.
 * 이기종 통신시 주의 : Javascript 와 같이 부동소수점 숫자체계를 사용하여 정수를 저장하는 경우, 2의 53승 이상의 정수를 근사값으로 저장하기 때문에 주의가 필요함. 문자열로 주고 받는 등의 처리로 해결 가능함
 
-# 사용법 (How to use)
+# Usage
+SnowflakeIdGenerator 는 사용하는 application 에서 singleton instance 로 생성해야 합니다.
 ```java
 SnowflakeIdGenerator idGenerator = new SnowflakeIdGenerator(0);
 idGenerator.nextId();
