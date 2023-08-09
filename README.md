@@ -4,7 +4,7 @@
 
 트위터에서 2010년에 발표한 [Snowflake](https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake) 알고리즘 기반으로 개발하였다.
 
-스노우플레이크는 64비트로 이루어진 ID로, 각각의 비트는 특정 의미를 갖고 있습다.
+스노우플레이크는 64비트로 이루어진 ID로, 각각의 비트는 특정 의미를 갖고 있다.
 
 <img width="886" alt="image" src="https://user-images.githubusercontent.com/67363545/232283753-aef4ea69-e5b2-4fb6-a743-af02254c5361.png">
 
